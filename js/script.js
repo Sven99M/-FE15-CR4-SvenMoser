@@ -33,7 +33,7 @@ for (let index in data) {
     </div>`;
 
 }
-// need to learn more about addEventListener
+// couldn't figure out how to make the importance button increase work
 // for (let index in data) {
 //     document.getElementsByClassName("importancetext")[index].addEventListener("click", function() {
 //             var increase = document.getElementById(`importance${index}`);
