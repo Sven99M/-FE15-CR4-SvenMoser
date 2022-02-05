@@ -1,5 +1,4 @@
 let data = JSON.parse(tasks);
-console.log(data)
 
 for (let index in data) {
     document.getElementById("result").innerHTML +=
@@ -17,10 +16,12 @@ for (let index in data) {
         <p class="card-text text-center">${data[index].text}</p>
         <hr>
         <div class="importance"><i class="fas fa-exclamation-circle"></i>
-        <p>Priority Level: </p><p class="btn btn-secondary importancetext">${data[index].importance}</p></div>
+        <p>Priority Level: </p>
+        <p class="btn btn-success importancetext" id="importance" value="increase" >${data[index].importance}</p>
+        </div>
 
         <div class="importance"><i class="fas fa-calendar-alt"></i>
-        <p>Deadline:</p><p >${data[index].date}</p></div>
+        <p>Deadline:</p><p>${data[index].date}</p></div>
         <hr>
         <div class="cardButtons">
             <a href="#" class="btn btn-danger">Delete</a>
@@ -29,5 +30,13 @@ for (let index in data) {
           </div>
         </div>
         </div>
-    </div>`
+    </div>`;
+
 }
+// need to learn more about addEventListener
+// for (let index in data) {
+//     document.getElementsByClassName("importancetext")[index].addEventListener("click", function() {
+//             var increase = document.getElementById(`importance${index}`);
+//             increase++;
+//         }
+//     }
