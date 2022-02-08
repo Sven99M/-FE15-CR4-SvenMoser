@@ -1,55 +1,55 @@
 let tasks = `[{
     "img":"https://cdn.pixabay.com/photo/2017/03/27/11/57/garden-2178234_960_720.jpg",
     "title":"Lawn Mowing",
-    "text":"Need to mow the lawn in the front garden. ",
+    "text":"Need to mow the front garden. ",
     "importance":0,
     "date":"20.04.2022"
 },{
     "img":"https://cdn.pixabay.com/photo/2022/01/25/19/13/nature-6967075__340.jpg",
     "title":"Walking the dog",
     "text":"Need to do that 3 times a day",
-    "importance": 3,
+    "importance":3,
     "date":"Everday"
 },{
     "img":"https://cdn.pixabay.com/photo/2016/03/02/20/13/grocery-1232944_960_720.jpg",
     "title":"Grocery Shopping",
-    "text":"Don't buy too much",
-    "importance": 2,
+    "text":"Just buy necessary things.",
+    "importance":2,
     "date":"This Friday"
 },{
     "img":"https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_960_720.jpg",
     "title":"Exercise",
     "text":"Atleast 1 hour this time",
-    "importance": 3,
+    "importance":3,
     "date":"Today"
 },{
     "img":"https://cdn.pixabay.com/photo/2015/06/24/15/45/code-820275_960_720.jpg",
     "title":"Website",
     "text":"Need to get the JavaScript done",
-    "importance": 5,
+    "importance":0,
     "date":"05.02.2022"
 },{
     "img":"https://cdn.pixabay.com/photo/2021/08/02/18/11/covid-6517476_960_720.jpg",
     "title":"Get an PCR-Test",
     "text":"Need it for CodeFactory",
-    "importance": 2,
+    "importance":0,
     "date":"05.02.2022"
 },{
     "img":"https://cdn.pixabay.com/photo/2019/09/18/16/21/email-4487083_960_720.jpg",
     "title":"Send E-Mail",
     "text":"send Mail to office@imagine.at",
-    "importance": 1,
+    "importance":0,
     "date":"Silver"
 },{
     "img":"https://cdn.pixabay.com/photo/2014/12/17/16/54/clean-571679_960_720.jpg",
     "title":"Clean my room",
     "text":"Clean everything this time",
-    "importance": 3,
+    "importance":0,
     "date":"10.02.2022"
 },{
     "img":"https://cdn.pixabay.com/photo/2015/07/31/22/12/phone-869669_960_720.jpg",
     "title":"Call a friend",
     "text":"Didn't call him a long time",
-    "importance": 2,
+    "importance":0,
     "date":"06.02.2022"
 }]`
