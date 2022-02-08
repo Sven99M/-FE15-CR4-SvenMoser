@@ -34,7 +34,17 @@ for (let index in data) {
 
 
 }
+// Would like to know where i have the mistake in my sortbutton
 
+function sorter() {
+    data.sort(function(a, b) {
+        return b.importance - a.importance;
+    })
+}
+document.getElementById("sortbutton").addEventListener("click", function() {
+    sorter();
+
+});
 
 
 for (let index in data) {
@@ -51,16 +61,6 @@ for (let index in data) {
         }
     });
 
-    // Would like to know where i have the mistake in my sortbutton
 
-    // function sorter() {
-    //     data.sort(function(a, b) {
-    //         return b.importance - a.importance;
-    //     })
-    // }
-    // document.getElementById("sortbutton").addEventListener("click", function() {
-    //     sorter();
-
-    // });
 
 }
