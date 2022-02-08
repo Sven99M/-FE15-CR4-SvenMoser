@@ -1,18 +1,21 @@
 let data = JSON.parse(tasks);
 
+
+// sort button doesnt work
+
 for (let index in data) {
     document.getElementById("sortbutton").addEventListener("click", function() {
 
-        var sortButton = document.getElementById(`importancetext${index}`).innerHTML;
-
         function sorter() {
-            sortButton.sort(function(a, b) {
+            data.sort(function(a, b) {
                 return b.importance - a.importance
             });
         }
-        console.log(sorter());
+        sorter();
+
     })
 }
+
 for (let index in data) {
     document.getElementById("result").innerHTML +=
         `<div class="col">
