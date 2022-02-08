@@ -1,21 +1,4 @@
 let data = JSON.parse(tasks);
-
-
-// sort button doesnt work
-
-for (let index in data) {
-    document.getElementById("sortbutton").addEventListener("click", function() {
-
-        function sorter() {
-            data.sort(function(a, b) {
-                return b.importance - a.importance
-            });
-        }
-        sorter();
-
-    })
-}
-
 for (let index in data) {
     document.getElementById("result").innerHTML +=
         `<div class="col">
@@ -49,7 +32,11 @@ for (let index in data) {
         </div>
     </div>`;
 
+
 }
+
+
+
 for (let index in data) {
     document.getElementById(`importanceicon${index}`).addEventListener("click", function() {
         var increase = document.getElementById(`importancetext${index}`);
@@ -62,39 +49,18 @@ for (let index in data) {
         } else if (increase.innerHTML <= 5) {
             increase.style.backgroundColor = "#dc3545";
         }
-    })
+    });
+
+    // Would like to know where i have the mistake in my sortbutton
+
+    // function sorter() {
+    //     data.sort(function(a, b) {
+    //         return b.importance - a.importance;
+    //     })
+    // }
+    // document.getElementById("sortbutton").addEventListener("click", function() {
+    //     sorter();
+
+    // });
 
 }
-// tried to do the sortbutton
-
-
-let btns = document.getElementsByClassName("product-button");
-
-for (let i = 0; i < btns.length; i++) {
-
-    btns[i].addEventListener("click", function() {
-
-        addToCart(products[i], i);
-
-    })
-
-}
-//Comparer Function   
-// document.getElementById("sortbutton").addEventListener("click", GetSortOrder() {
-
-//             function GetSortOrder(prop) {
-//                 return function(a, b) {
-//                     if (a[prop] > b[prop]) {
-//                         return 1;
-//                     } else if (a[prop] < b[prop]) {
-//                         return -1;
-//                     }
-//                     return 0;
-//                 }
-//             }
-
-//             array.sort(GetSortOrder("sortbutton")); //Pass the attribute to be sorted on    
-//             document.write("Sorted Employee Names : ");
-//             for (var item in array) {
-//                 document.write("<br>" + array[item].EmployeeName);
-//             }
