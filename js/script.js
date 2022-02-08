@@ -34,7 +34,7 @@ for (let index in data) {
 
 
 }
-// Would like to know where i have the mistake in my sortbutton
+// Would like to know where i have the issue in my sortbutton
 
 function sorter() {
     data.sort(function(a, b) {

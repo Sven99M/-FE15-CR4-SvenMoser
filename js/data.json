@@ -39,7 +39,7 @@ let tasks = `[{
     "title":"Send E-Mail",
     "text":"send Mail to office@imagine.at",
     "importance":0,
-    "date":"Silver"
+    "date":"This weekend"
 },{
     "img":"https://cdn.pixabay.com/photo/2014/12/17/16/54/clean-571679_960_720.jpg",
     "title":"Clean my room",
